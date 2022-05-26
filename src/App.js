@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Container, Navbar, Row, Col } from 'react-bootstrap'
 import AddBook from './components/AddBook'
-import BooksList from './components/BooksList'
+import BookList from './components/BookList'
 import './App.css'
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
       <Container>
         <Row>
           <Col>
-            <BooksList getBookId={getBookIdHandler} />
+            <BookList getBookId={getBookIdHandler} />
           </Col>
         </Row>
       </Container>
