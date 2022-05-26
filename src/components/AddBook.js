@@ -10,10 +10,10 @@ const AddBook = ({ id, setBookId }) => {
   const [message, setMessage] = useState({ error: false, msg: '' })
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault() // prevent default form submission(prevent page from refrshing)
     setMessage('')
     if (title === '' || author === '') {
-      setMessage({ error: true, msg: 'All fields are mandatory!' })
+      setMessage({ error: true, msg: 'Please field all required field!' })
       return
     }
     const newBook = {

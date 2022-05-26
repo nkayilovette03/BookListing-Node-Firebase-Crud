@@ -19,7 +19,7 @@ function App() {
         </Container>
       </Navbar>
 
-      <Container style={{ width: '400px' }}>
+      <Container style={{ width: '600px' }}>
         <Row>
           <Col>
             <AddBook id={bookId} setBookId={setBookId} />
